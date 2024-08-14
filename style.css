@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&family=Inconsolata:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.title {
+  text-align: center;
+  font-family: inherit;
+  font-size: 2.6rem;
+  margin: 1em 0 2em 0;
+}
+
+.discord {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.donate-button {
+  padding: 5px 20px;
+  border: 3px solid #f05ee4;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  /* background: #6cb928; */
+  color: #000;
+}
+
+.map-dir {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.banner {
+  color: #000;
+  background-color: #e8e8e8;
+  padding: 1rem;
+}
+
+hr {
+  background-color: #e0e0e0;
+  border: none;
+  height: 1px;
+  margin: 1.5em 0;
+}
+
+.button-disabled {
+  display: inline-block;
+  background: #cdc9c9;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 16px;
+  border: 1px solid #cdc9c9;
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  /*color: #fff;
+  background: #000;
+  */
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #000;
+  position: relative;
+  transition: color 0.2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: -1;
+  transform-origin: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in;
+  -webkit-transition: transform 0.2s ease-in;
+  -moz-transition: transform 0.2s ease-in;
+  -ms-transition: transform 0.2s ease-in;
+  -o-transition: transform 0.2s ease-in;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: #fff;
+}
+
+.button:hover:before,
+.button:focus:before,
+.button:active:before {
+  transform: none;
+}
+
+.script-link {
+  width: 18px;
+  cursor: pointer;
+}
